@@ -1,1 +1,0 @@
-/usr/bin/cc  -fopenmp CMakeFiles/top-stencil.dir/src/main.c.o -o top-stencil  -Wl,-rpath,/home/sofiane/TOP_PROJECT_GRP/TOP-project/build/src:/usr/lib/x86_64-linux-gnu/openmpi/lib src/libstencil.so src/libutils.so -lm /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
