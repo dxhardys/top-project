@@ -37,4 +37,3 @@ Your goal is to make the code as fast as possible. You can do whatever you want 
 Your grade will be based on the overall approach (use of tools seen in class, optimizations techniques, etc...), not necessarily on the raw performance improvement (although it remains part of the grade). If possible, try to run your code on a cluster (e.g. OB1) in order to profit from the higher core count and/or NUMA architecture.
 
 If you have any question, feel free to ask the TA, either by email or PM on Discord.
-# top-project

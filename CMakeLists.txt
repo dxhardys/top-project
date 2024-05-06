@@ -2,7 +2,15 @@ cmake_minimum_required(VERSION 3.16)
 project(top-stencil LANGUAGES C DESCRIPTION "3D stencil with MPI")
 
 set(CMAKE_COLOR_DIAGNOSTICS ON)
-set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD 11)
+
+find_package(OpenMP REQUIRED)
+
+if(OpenMP_C_FOUND)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
+endif()
+
+add_compile_options(-Wall -Wextra -Wconversion -pg -g3 -O3)
 
 if(CMAKE_BUILD_TYPE EQUAL Debug)
     add_compile_options(-Wall)

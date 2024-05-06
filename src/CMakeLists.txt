@@ -1,4 +1,4 @@
-find_package(MPI REQUIRED)
+#find_package(MPI REQUIRED)
 include_directories(${MPI_INCLUDE_PATH})
 
 add_library(stencil SHARED stencil/config.c stencil/comm_handler.c stencil/mesh.c stencil/init.c stencil/solve.c)
@@ -10,5 +10,3 @@ target_include_directories(utils PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
 add_library(stencil::stencil ALIAS stencil)
 add_library(stencil::utils ALIAS utils)
-
-
