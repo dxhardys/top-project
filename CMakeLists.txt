@@ -10,7 +10,7 @@ if(OpenMP_C_FOUND)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
 endif()
 
-add_compile_options(-Wall -Wextra -Wconversion -pg -g3 -O3)
+add_compile_options(-Wall -Wextra -Wconversion -pg -g3 -O3 -funroll-loops)
 
 if(CMAKE_BUILD_TYPE EQUAL Debug)
     add_compile_options(-Wall)
