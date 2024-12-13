@@ -10,7 +10,7 @@
 #include <stdio.h>
 
 static char* DEFAULT_CONFIG_PATH = "../config.txt";
-static char* DEFAULT_OUTPUT_PATH = "../scripts/result.txt";
+static char* DEFAULT_OUTPUT_PATH = "../results/result.txt";
 
 static void save_results(
     FILE ofp[static 1],
